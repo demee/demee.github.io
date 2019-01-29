@@ -5,10 +5,4 @@
 layout: home
 ---
 
-
-# Banana Eat banana gone
-
-# marmelada
-
-# why only fist on is first one
-
+Welcome to home page
