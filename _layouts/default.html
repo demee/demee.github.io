@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}" >
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include header.html -%}
   <body>
-    <h1><a href="/"><img style="width:1em;" src="/assets/icons/budding-leaves.svg" /> demee.org</a></h1>
     <header>
-      <nav>
-        <a href="/credits">Credits</a>
-      </nav>
+      <h1>
+        <a href="/">
+          <img style="width:1em;" src="/assets/icons/budding-leaves.svg" />
+          demee.org
+        </a>
+      </h1>
     </header>
+    <nav>
+      <ul>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/credits.html">Credits</a></li>
+      </ul>
+    </nav>
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      <div class="wrapper">{{ content }}</div>
     </main>
   </body>
 </html>
