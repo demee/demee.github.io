@@ -6,3 +6,4 @@ layout: home
 ---
 # Are you looking
 # for me? 
+( I help you develop the features you own ) 
