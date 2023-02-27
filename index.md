@@ -6,4 +6,4 @@ layout: home
 ---
 # Are you looking
 # for me? 
-( I help you develop the features you own ) 
+( I help you develop the skills you own ) 
