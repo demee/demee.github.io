@@ -1,0 +1,34 @@
+{
+  "name": "demee.org",
+  "version": "1.0.0",
+  "private": true,
+  "description": "demee.org",
+  "author": "Slawomir Demichowicz",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "gatsby": "^5.8.1",
+    "gatsby-plugin-emotion": "^8.8.0",
+    "gatsby-plugin-google-gtag": "^5.8.0",
+    "gatsby-plugin-manifest": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4"
+  }
+}
