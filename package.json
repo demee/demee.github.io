@@ -21,11 +21,12 @@
     "gatsby": "^5.8.1",
     "gatsby-plugin-emotion": "^8.8.0",
     "gatsby-plugin-manifest": "^5.8.0",
+    "gatsby-source-contentful": "^8.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
+    "@types/node": "^20.4.1",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "typescript": "^5.0.4"
