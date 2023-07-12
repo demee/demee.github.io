@@ -26,7 +26,7 @@ const config: GatsbyConfig = {
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png",
+      "icon": "src/images/favicon.png",
       "name": "demee.org",
       "short_name": "demee.org",
       "start_url": "/",
