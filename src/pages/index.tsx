@@ -7,8 +7,6 @@ const pageStyles = {
   fontFamily: '-apple-system, Roboto, sans-serif, serif',
 };
 
-
-
 const IndexPage: React.FC<PageProps> = () => (
   <main style={pageStyles}>
     demee.org
