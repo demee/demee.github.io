@@ -2,7 +2,6 @@ import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
-
 const pageStyles = {
   color: '#232129',
   padding: 96,
@@ -15,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => (
       <StaticImage src="../images/logo.jpg" alt="d"/>
     </header>
     <main style={pageStyles}>
-      demee.org
+      
     </main>
     <footer></footer>
   </>

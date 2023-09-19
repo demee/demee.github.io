@@ -4,8 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
-    'aribnb-base',
+    'airbnb-base',
     'airbnb-typescript',
   ],
   parser: '@typescript-eslint/parser',
@@ -15,6 +16,7 @@ module.exports = {
     },
     ecmaVersion: 12,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   plugins: [
     'react',
@@ -22,8 +24,13 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-     // note you must disable the base rule as it can report incorrect errors
+    // note you must disable the base rule as it can report incorrect errors
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': ['error']
+    '@typescript-eslint/no-use-before-define': ['error'],
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

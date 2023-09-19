@@ -1,7 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
 
-console.log(process.env.NODE_ENV)
-
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
@@ -18,9 +16,9 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-emotion',
-    'gatsby-plugin-image',    
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-contentful',
       options: {
