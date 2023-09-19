@@ -1,5 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+
 
 const pageStyles = {
   color: '#232129',
@@ -8,9 +10,15 @@ const pageStyles = {
 };
 
 const IndexPage: React.FC<PageProps> = () => (
-  <main style={pageStyles}>
-    demee.org
-  </main>
+  <>
+    <header>
+      <StaticImage src="../images/logo.jpg" alt="d"/>
+    </header>
+    <main style={pageStyles}>
+      demee.org
+    </main>
+    <footer></footer>
+  </>
 );
 
 export default IndexPage;
@@ -18,6 +26,6 @@ export default IndexPage;
 export const Head: HeadFC = () => (
   <>
     <title>demee.org</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
   </>
 );
