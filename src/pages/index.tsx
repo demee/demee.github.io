@@ -1,6 +1,7 @@
 import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import logo from '../images/logo.jpg';
 
 const pageStyles = {
   color: '#232129',
@@ -9,9 +10,9 @@ const pageStyles = {
 };
 
 const IndexPage: React.FC<PageProps> = () => (
-  <>
+  <>  
     <header>
-      <StaticImage src="../images/logo.jpg" alt="d"/>
+      <StaticImage src={logo} alt='logo'/>
     </header>
     <main style={pageStyles}>
       
