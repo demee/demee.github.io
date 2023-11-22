@@ -12,7 +12,7 @@ const pageStyles = {
 const IndexPage: React.FC<PageProps> = () => (
   <>  
     <header>
-      <StaticImage src={logo} alt='logo'/>
+      <img src={logo} alt='logo'/>
     </header>
     <main style={pageStyles}>
       
