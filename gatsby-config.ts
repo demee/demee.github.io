@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
+import path from 'node:path';
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -35,7 +36,8 @@ const config: GatsbyConfig = {
         start_url: '/',
         background_color: '#ffffff',
       },
-    }],
+    }    
+  ],
 };
 
 export default config;

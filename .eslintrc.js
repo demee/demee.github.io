@@ -33,4 +33,6 @@ module.exports = {
       version: 'detect',
     },
   },
+  // exclude graphql.config.js from linting
+  ignorePatterns: ['graphql.config.js'],
 };
