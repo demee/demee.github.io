@@ -34,5 +34,5 @@ module.exports = {
     },
   },
   // exclude graphql.config.js from linting
-  ignorePatterns: ['graphql.config.js'],
+  ignorePatterns: ['tsconfig.js', 'gatsby-browser.ts', 'graphql.config.js', 'tailwind.config.js'],
 };

@@ -1,5 +1,4 @@
 import type { GatsbyConfig } from 'gatsby';
-import path from 'node:path';
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -20,6 +19,8 @@ const config: GatsbyConfig = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-contentful',
       options: {
@@ -36,7 +37,7 @@ const config: GatsbyConfig = {
         start_url: '/',
         background_color: '#ffffff',
       },
-    }    
+    },
   ],
 };
 
