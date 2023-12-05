@@ -10,8 +10,7 @@ const pageStyles = {
 
 const IndexPage: React.FC<PageProps> = () => (
   <>
-    <header> 
-    </header>
+    <header>demee.org</header>
     <main style={pageStyles}></main>
     <footer></footer>
   </>
