@@ -1,26 +1,16 @@
 import React from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
-import '../styles/index.scss';
-
-const pageStyles = {
-  color: '#232129',
-  padding: 96,
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
+import type { PageProps } from 'gatsby';
+import Head from '../components/head';
+import Navigation from '../components/navigation/navigation';
+import Footer from '../components/footer';
 
 const IndexPage: React.FC<PageProps> = () => (
   <>
-    <header>demee.org</header>
-    <main style={pageStyles}></main>
-    <footer></footer>
+    <Navigation />
+    <main>Welcome to demee.org</main>
+    <Footer />
   </>
 );
 
 export default IndexPage;
-
-export const Head: HeadFC = () => (
-  <>
-    <title>demee.org</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
-  </>
-);
+export { Head };

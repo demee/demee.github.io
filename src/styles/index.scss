@@ -1,24 +1,31 @@
-/* SCSS RGB */
-$lime-green: rgba(78, 204, 0, 1);
-$lime: rgba(194, 255, 26, 1);
-$mindaro: rgba(236, 255, 158, 1);
-$electric-purple: rgba(192, 0, 250, 1);
-$electric-violet: rgba(149, 0, 255, 1);
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-right: linear-gradient(90deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-bottom: linear-gradient(180deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-left: linear-gradient(270deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-top-right: linear-gradient(45deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-bottom-right: linear-gradient(135deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-top-left: linear-gradient(225deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-bottom-left: linear-gradient(315deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-$gradient-radial: radial-gradient(#4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-
+@import './colors.scss'; 
+// use Roboto Mono font from google fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 
 body {
-    background-color: black;
-    color: white;
-  }
-  
+  background-color: rgb(34, 34, 34);
+  color: rgb(199, 199, 199);
+}
+
+// use Roboto Mono font
+body {
+  font-family: 'Roboto Mono', monospace;
+  // make font size 16px
+  font-size: 16px;
+  // website should have some spacing from the edges of the screen
+  margin: 0 3rem;
+}
+// make links always white even if they are visited and not uderlined 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+hr {
+  border: 1px solid $electric-purple;
+}

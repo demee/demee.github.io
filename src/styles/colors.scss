@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 /* SCSS RGB */
 $lime-green: rgba(78, 204, 0, 1);
 $lime: rgba(194, 255, 26, 1);
@@ -20,8 +15,3 @@ $gradient-bottom-right: linear-gradient(135deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff,
 $gradient-top-left: linear-gradient(225deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
 $gradient-bottom-left: linear-gradient(315deg, #4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
 $gradient-radial: radial-gradient(#4ECC00ff, #C2FF1Aff, #ECFF9Eff, #C000FAff, #9500FFff);
-
-body {
-  background-color: $lime-green;
-}
-
