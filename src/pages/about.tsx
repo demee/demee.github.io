@@ -1,22 +1,31 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { PageProps, graphql } from 'gatsby';
 import Layout from '../components/layout';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-const About: React.FC = () => (
+
+const About: React.FC<PageProps<Queries.AboutQuery>>= ( { data }) => {
+  console.log(data);
+  return (
   <Layout>
-    <h1>About</h1>
-    <p>{}</p>
-    <p>
-      This is a blog about the things I've learned while building this blog.</p>
+    <h1>{data.contentfulAbout?.title}</h1>
+    <div>
+      {documentToReactComponents(JSON.parse(data.contentfulAbout?.content?.raw || ''))}
+    </div>
   </Layout>
-);
+)
+};
 
-export const pageQuery = graphql`{
-  site {
-    siteMetadata {
-      title
+export const query = graphql`
+  query About {
+    contentfulAbout(title: {eq: "About"}) {
+      id
+      title, 
+      content {
+        raw
+      }
     }
   }
-}`;
+`
 
 export default About;
