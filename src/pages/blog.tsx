@@ -1,9 +1,8 @@
 import React from 'react';
-import Navigation from '../components/navigation/navigation';
-import Footer from '../components/footer';
+import Layout from '../components/layout';
 
-const Blog = () => (
-    <><Navigation /><h1>Blog</h1><p>Blog posts will go here</p><Footer/></>
+const Blog : React.FC = () => (
+    <Layout><h1>Blog</h1></Layout>
 );
 
 export default Blog;

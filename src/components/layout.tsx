@@ -1,11 +1,9 @@
 import React from 'react';
 import Navigation from './navigation/navigation';
 import Footer from './footer';
-import '../styles/global.css';
 
-
-const Layout = ({ children }) => (
-  <div>
+const Layout : React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div className='layout'>
     <Navigation />
     {children}
     <Footer />

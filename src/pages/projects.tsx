@@ -1,7 +1,7 @@
 import React from 'react';
-import Navigation from '../components/navigation/navigation';
-import Footer from '../components/footer';
 
-const Projects = () => <><Navigation /><h1>Projects</h1><Footer/></>;
+import Layout from '../components/layout';
+
+const Projects : React.FC = () => <Layout><h1>Projects</h1></Layout>;
 
 export default Projects;
