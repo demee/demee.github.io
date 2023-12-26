@@ -1,7 +1,11 @@
-import { PageProps } from "gatsby";
-import { PropsWithRef } from "react";
 
+export interface PostModel {
+    title: string;
+    content: string;
+    slug: string;
+    date: string;
+}
 
-export default interface PostProps  {
-    post: Queries.ContentfulPost;
+export default interface PostProps {
+    post: PostModel;
 }
