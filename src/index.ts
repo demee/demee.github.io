@@ -12,8 +12,9 @@ const appContainer = document.getElementById('app');
 
 // Example: Create a simple welcome message
 // Replace this with your actual anigraph-ui implementation
-function initApp() {
-  appContainer.innerHTML = `
+function initApp(): void {
+  if (appContainer) {
+    appContainer.innerHTML = `
     <div class="container">
       <h1>Welcome to Anigraph UI App</h1>
       <p>This is a single page application built with webpack.</p>
@@ -25,6 +26,7 @@ function initApp() {
       </ol>
     </div>
   `;
+  }
 }
 
 // Initialize the app when DOM is ready
