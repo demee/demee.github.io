@@ -27,3 +27,6 @@ Thumbs.db
 
 # npm authentication (contains sensitive token)
 .npmrc
+
+# public directory
+public/
