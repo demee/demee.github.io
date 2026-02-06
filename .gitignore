@@ -25,8 +25,5 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# npm authentication (contains sensitive token)
-.npmrc
-
 # public directory
 public/
