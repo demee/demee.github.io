@@ -30,6 +30,6 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@demee/anigraph-ui": "^1.0.1"
+    "@demee/anigraph-ui": "^1.6.2"
   }
 }
