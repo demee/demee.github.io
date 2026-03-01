@@ -10,11 +10,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    alias: {
-      // Use local anigraph-ui source so we get named exports (Renderer, String, SimpleFont).
-      // The published UMD build only exposes a single default export.
-      '@demee/anigraph-ui': path.resolve(__dirname, '../anigraph-ui/src/index.ts'),
-    },
   },
   module: {
     rules: [
