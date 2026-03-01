@@ -10,13 +10,21 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      '@demee/anigraph-ui': path.resolve(__dirname, 'node_modules/@demee/anigraph-ui/src/index.ts'),
+    },
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            allowTsInNodeModules: true,
+          },
+        },
+        exclude: /node_modules\/(?!@demee\/anigraph-ui)/,
       },
       {
         test: /\.css$/,
